@@ -23,7 +23,7 @@ def test_input1() -> None:
     assert retval == 0
     assert out == 'A:225, T:251, C:245, G:249' 
 
-def test_input1() -> None:
+def test_input2() -> None:
     """ input file 2 """
     retval, out = getstatusoutput(f'./{PRG} tests/input2.txt')
     assert retval == 0

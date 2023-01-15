@@ -13,6 +13,15 @@ def test_cmdline1() -> None:
 def test_cmdline2() -> None:
     assert (0, 0, 0, 0) == dna.count_sequence('oofbnvm')
 
+def test_cmdline3() -> None:
+    assert (1, 1, 4, 1) == dna.count_sequence('ACTGCCC')
+
+def test_cmdline4() -> None:
+    assert (0, 0, 0, 0) == dna.count_sequence('1234')
+
+def test_cmdline5() -> None:
+    assert (0, 0, 0, 0) == dna.count_sequence('actg')
+
 #def test_exists() -> None:
 #    """ Program exists """
 #    assert os.path.exists(PRG)
